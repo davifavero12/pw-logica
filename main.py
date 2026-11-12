@@ -1,2 +1,4 @@
-print("ola mundo!")
-print("estou programando em python!")
+nome = "davi"
+sobrenome = "favero borcart"
+
+print(nome, sobrenome)
