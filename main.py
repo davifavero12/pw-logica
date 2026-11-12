@@ -1,6 +1,3 @@
-num1 = input("digite um numero para somar: ")
-num2 = input("digite um outro numero para somar: ")
+nomes = ["lucas", "vinicios", "davi", "arthur", "toddynho", "arthur f", "maria", "pietra", "miguel", "bernado", "eric", "kaua"]
 
-soma = num1 + num2
-
-print("o resultado de soma e:", soma)
+print[("bernardo")]
