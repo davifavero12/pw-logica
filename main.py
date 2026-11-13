@@ -1,7 +1,9 @@
 nome = input("seu nome: ")
-print("=" * 30)
-print("ola, " + nome + "!")
-print("=" * 30)
+ano_nascimento = int(input("ano de nascimento"))
+ano_atual = 2026
 
-print(nome * 3)
-print(len(nome))
+idade = ano_atual - ano_nascimento
+ano_100 = ano_nascimento + 100
+
+print(f"{nome}, voce tem (ou vai fazer) {idade} anos em {ano_atual}")
+print(f"voce vai completar 100 anos em {ano_100}")
