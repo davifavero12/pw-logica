@@ -183,10 +183,18 @@ if operaçao == "1":
     resultado = (valor * 9 / 5) + 32
     print(f"resultado: {resultado:.1f} ºf")
 
-    elif operaçao == "2":
+elif operaçao == "2":
     resultado = valor / 1.609
     print(f"resultado: {resultado:.2f} ºf")
 
-    elif operacao == "3":
+elif operacao == "3":
     resultado = valor / 5.93
-    print(f"resultado:{resultado:.2f} ºf")
+    print(f"resultado: {resultado:.2f} ºf")
+
+    contador = 1
+
+    while contador <= 5:
+
+        print("ola, mundo!")
+
+        contador = contador + 1 
