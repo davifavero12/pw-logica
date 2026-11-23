@@ -5,9 +5,9 @@ if idade >= 18:
 else: 
     print("menor de idade")
 
-    print(f"nota == 10? {nota == 10}")
-    print(f"nota != 0? {nota != 0}")
-    print(f"nota >= 7? {nota >= 7}")
+    print(f"nota == 10? {"nota == 10"}")
+    print(f"nota != 0? {"nota != 0"}")
+    print(f"nota >= 7? {"nota >= 7"}")
 
 nota = int(input("Informe o conceito do aluno: "))
 
@@ -85,31 +85,24 @@ else:
     else:
         print("\nvoce perdeu!")
 
-    idade = int(input("informe a idade"))
-
+    idade = int(input("numero inteiro"))
+    
     if idade <= 0:
-        print("idade invalida!")
+        print("idade invalidade!")
+
     elif idade <= 12:
         print("criança")
 
-    elif idade <=  17:
+    elif idade <= 13:
         print("adolescente")
 
-    elif idade >= 59:
+    elif idade >= 18:
         print("adulto")
 
-    else: idade >= 60
-        print("idoso")
+    else: 
+        print(" 60 idoso")
 
-
-
-
-
-
-
-
-        print("exercio 9")
-
+        ("exercicio 9")
         print("=== par ou impar ===")
         nome1 = input("nome do jogador 1: ")
         nome2 = input("nome do jogador 2: ")
@@ -125,5 +118,75 @@ else:
 
         if escolha == resultado:
             print(f"{nome1} ganhou! ")
-        else
+        else:
             print(f"{nome2} ganhou!")
+
+
+    print("exercicio 10")
+    idade = int(input("digite a idade do cliente: "))
+    dia = input("digite o dia da semana (seg, ter, qua, qui, sex, sab, dom)").lower()
+    ingresso = 40.00
+    #etapa 1
+    if idade <= 12:
+        ingresso = ingresso * 0.5
+        print("meia entrada - criança!")
+
+    elif idade >= 60:
+        ingressso = ingresso * 0.5
+        print("meia entrada - criança!")
+    elif idade >= 60:
+        ingresso = ingresso * 0.5
+        print("meia entrada - idoso!")
+    elif idade <= 21:
+        ingresso = ingresso * 0.5
+        print("meia entrada - estudante!")
+    #etapa 2 
+    if dia == "qua":
+        ingresso = ingresso * 0.5
+        print("promoçao de quarta!")
+
+    print(f"valor final do ingresso: r$ {ingresso:.2f}")
+
+
+    print("exercicio 11")
+
+    a = int(input("digite o lado a: "))
+    b = int(input("digite o lado b: "))
+    c = int(input("digite o lado c: "))
+
+    #etapa 1
+    if a < b + c and b < a + c and c < a + b:
+
+        print("forma um triangulo!")
+
+        #etapa 2
+        if a == b and b == c:
+            print("triangulo equilatero!")
+        elif a == b or a == c or b == c:
+            print("triangulo isoceles!")
+        else:
+            print("triangulo escaleno!")
+    else:
+         print("nao forma um triangulo!")
+        
+
+    print("exercicio 12")
+operaçao = input(
+    "escolha a conversao: \n"
+    "1 - celsius para fahrenheit\n"
+    "2 - quilometros para milhas \n"
+    "3 - reais para dolar\n"
+    "4 - quilogramas para libras\n"
+)
+valor = float(input("digite o valor que deseja converter: "))
+if operaçao == "1":
+    resultado = (valor * 9 / 5) + 32
+    print(f"resultado: {resultado:.1f} ºf")
+
+    elif operaçao == "2":
+    resultado = valor / 1.609
+    print(f"resultado: {resultado:.2f} ºf")
+
+    elif operacao == "3":
+    resultado = valor / 5.93
+    print(f"resultado:{resultado:.2f} ºf")
