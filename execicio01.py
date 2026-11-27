@@ -57,7 +57,6 @@ print(f"quantidade de produto: {quantidade}")
                        
 
 
-
 numero = int(input("digite um numero entre 1 e 10: "))
 while numero < 1 or numero > 10:
     print("numero invalido! tente novamente.")
